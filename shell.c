@@ -35,11 +35,11 @@ int main(int __attribute__((unused)) argc, char *argv[])
         /**/
         if (!type_command)
             break;
-        if (read_getline == -1)
+        if (read_getline != 0)
             break;
         /**/
         /*token is a read one element of strtok*/
-        token = strtok(type_command, ",");
+        token = strtok(type_command, DELIMS);
         /*!token*/
         if (!token)
             /*Consolo input, Standard output 1*/
