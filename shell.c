@@ -104,7 +104,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
                     arguments = create_array(type_command);
                     add_array(token, arguments);
 			execve(arguments[0], arguments, NULL);
-			_printf("%s: %d: %s:Command not found\n", argv[0], cont, arguments[0]);
+			_printf("%s: %i: %s:Command not found\n", argv[0], cont, arguments[0]);
                     /*Finally if execve() we release the (free) son and return to the father*/
                     free(arguments);
                     /*exit_status = 127 indicates a command not found error*/
