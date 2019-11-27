@@ -1,8 +1,7 @@
 #include "shell.h"
 /**
- * pathname - replaces usr's cmd with the pathname of cmd
- *
- * @args: get the arguments from the string
+ * pathname - Replace comando to replace cmd.
+ * @args: take argumment.
  * Return: args
 */
 char *pathname(char *args)
