@@ -14,9 +14,10 @@ int _printf(const char *string, ...)
 
 	if (string == NULL)
 	return (-1);
+	/*Init valist*/
 	va_start(val, string);
 	for (i = 0; string[i]; i++)
-	{
+	{	/*String = 0*/	
 		if (string[i] == '%')
 		{
 			i++;
