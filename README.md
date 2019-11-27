@@ -60,7 +60,7 @@ The available command specifiers are
 
 ### FLOWSHELL v1.0
 
-![Logo FLOWSHELL](diagram_shell.jpg)
+![Logo FLOWSHELL](/flowchart/diagram_shell.jpg)
 
 ## Running the tests
 
