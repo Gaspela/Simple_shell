@@ -58,9 +58,13 @@ The available command specifiers are
 
 ## Flowchart
 
-### FLOWSHELL v1.0
+### FLOWSHELL
 
 ![Logo FLOWSHELL](/flowchart/diagram_shell.jpg)
+
+### FLOWPARCH
+
+![Logo FLOWPARCH](/flowchart/diagram_parent_child.jpg)
 
 ## Running the tests
 
