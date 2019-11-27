@@ -33,9 +33,9 @@ int main(int __attribute__((unused)) argc, char *argv[])
         /*read_getline captube and pass type_command how to standar in = 1*/
         read_getline = getline(&type_command, &buf_size, stdin); 
         /**/
-        if (!type_command)
-            break;
-        if (read_getline != 0)
+        /*if (!type_command)
+            break;*/
+        if (read_getline == -1)
             break;
         /**/
         /*token is a read one element of strtok*/
