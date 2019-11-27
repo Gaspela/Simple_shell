@@ -29,8 +29,6 @@ int main(int __attribute__((unused)) argc, char *argv[])
         cont++;
         if (isatty(0) == 1)
         /*Update the pwd promt*/
-            getcwd(cwd, sizeof(cwd));
-        _printf("%s", cwd);
         _printf("/hsh$ ");
         /*read_getline captube and pass type_command how to standar in = 1*/
         read_getline = getline(&type_command, &buf_size, stdin);
