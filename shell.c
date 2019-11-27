@@ -113,10 +113,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
 
                 default:
                     /*Wait blocked the process child, and stat return the status process*/
-                    wait(&stat);
-                    /*WIFEXITED != 0*/
-                    if (WIFEXITED(stat))
-                        exit_status = WEXITSTATUS(stat);
+                    return (0);
                 }
             }
         }
