@@ -5,12 +5,6 @@
  */
 #include "shell.h"
 
-#ifdef __unix__
-#define IS_POSIX 1
-#else
-#define IS_POSIX 0
-#endif
-
 /**/
 int main(int __attribute__((unused)) argc, char *argv[])
 {
@@ -33,7 +27,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
     while (init_shell)
     {
         cont++;
-        if (isatty(0) == 1 && (IS_POSIX == 1))
+        if (isatty(0) == 1)
         /*Update the pwd promt*/
             getcwd(cwd, sizeof(cwd));
         _printf("%s", cwd);
