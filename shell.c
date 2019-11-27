@@ -31,7 +31,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
         /*Update the pwd promt*/
         _printf("/hsh$ ");
         /*read_getline captube and pass type_command how to standar in = 1*/
-        read_getline = getline(&type_command, &buf_size, stdin);
+        read_getline = getline(&type_command, &buf_size, stdin); 
         /**/
         if (!type_command)
             break;
@@ -39,7 +39,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
             break;
         /**/
         /*token is a read one element of strtok*/
-        token = strtok(type_command, DELIMS);
+        token = strtok(type_command, ",");
         /*!token*/
         if (!token)
             /*Consolo input, Standard output 1*/
@@ -103,9 +103,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
                     /*Create and add the items entered by the user in the array*/
                     arguments = create_array(type_command);
                     add_array(token, arguments);
-
-                    execve(arguments[0], arguments, NULL);
-                    _printf("%s: %i: %s:Command not found\n", argv[0], cont, arguments[0]);
+			execve(arguments[0], arguments, NULL);
                     /*Finally if execve() we release the (free) son and return to the father*/
                     free(arguments);
                     /*exit_status = 127 indicates a command not found error*/
