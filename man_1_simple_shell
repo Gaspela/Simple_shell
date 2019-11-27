@@ -1,1 +1,113 @@
-Desc
+.Dd 25/11/19               \" DATE
+.Dt Simple shell      \" Program name and manual section number
+.Os Darwin
+.Sh NAME                 \" Section Header - required - don't modify
+.Nm Simple shell,
+.Nm Shell command interpreter
+.Nd This line parsed for whatis database.
+.Sh SYNOPSIS
+\fB #include <stdio.h>
+.Pp
+\fB #include <stdlib.h>
+.Pp
+\fB #include <stdarg.h>
+.Pp
+\fB #include <unistd.h>
+.Pp
+\fB #include <string.h>
+.Pp
+\fB #include <sys/wait.h>
+.Pp
+\fB #include <sys/type.h>
+.Pp
+\fB #include <sys/sta.h>
+
+
+.Op int _strcmp: Function to compare two strings
+.Pp
+.Op int _strlen: Function to compare the characters in the string
+.Pp
+.Op int _putchar: Function to write a character.
+.Pp
+.Op int _printf: Function that writes an output and print some characters.
+.Pp
+.Op int _puts: Function to write a line to the output screen.
+.Pp
+.Op int _add_array: 
+.Pp
+.Op int _create_array:
+.Pp
+.Op int _get_environment: Function to search for an environment string 
+
+.Sh DESCRIPTION          \" Section Header - required - don't modify
+The simple shell is a program that reads line by line from a file or the terminal line. It then interprets the lines and executes it if the line is a valid command.
+.Nm
+Underlining is accomplished with the .Ar macro like this:
+.Ar underlined text .
+.Pp                      \" Inserts a space
+A list of items with descriptions:
+.Bl -tag -width -indent  \" Begins a tagged list
+.It cd:
+Command to change the current ditectory for other one
+.It ls:
+command to list all the directories and files in the current directory
+.It echo:
+Command to display a line of text that are passed as an argument
+.It cat:
+Command to read data from a file and display its content as an output.
+.It chmod:
+Command to change permissions of a file.
+.It mkdir:
+Command to create a new directory.
+.It mv:
+Command to move a file or directory from the curreent directory to other one.
+.It pwd:
+Command to display the current directory.
+.It rm:
+Command to remove a file.
+.It rmdir:
+Command to remove a directory.
+.El                      \" Ends the list
+.Pp
+A list of flags and their descriptions:
+.Bl -tag -width -indent  \" Differs from above in tag removed
+.It Fl a                 \"-a flag as a list item
+Description of -a flag
+.It Fl b
+Description of -b flag
+.El                      \" Ends the list
+.Pp
+.\" .Sh ENVIRONMENT      \" May not be needed
+.\" .Bl -tag -width "ENV_VAR_1" -indent \" ENV_VAR_1 is width of the string ENV_VAR_1
+.\" .It Ev ENV_VAR_1
+.\" Description of ENV_VAR_1
+.\" .It Ev ENV_VAR_2
+.\" Description of ENV_VAR_2
+.\" .El
+.Sh FILES                \" File used or created by the topic of the man page
+.Bl -tag -width "/home/joeuser/Library/really_long_file_name" -compact
+.It Pa /usr/share/file_name
+FILE_1 description
+.It Pa /Users/joeuser/Library/really_long_file_name
+FILE_2 description
+.El                      \" Ends the list
+.\" .Sh DIAGNOSTICS       \" May not be needed
+.\" .Bl -diag
+.\" .It Diagnostic Tag
+.\" Diagnostic informtion here.
+.\" .It Diagnostic Tag
+.\" Diagnostic informtion here.
+.\" .El
+.Sh SEE ALSO
+.\" List links in ascending order by section, alphabetically within a section.
+.\" Please do not reference files that do not exist without filing a bug report
+.Xr man sh ,
+
+.Sh BUGS
+No known bugs.
+
+.Sh AUTHORS
+Samir Millan - 
+.Pp
+Diego Quijano - 1174@holbertonschool.com
+.Sh HISTORY           \" Document history if command behaves in a unique manner

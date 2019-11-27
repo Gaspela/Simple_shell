@@ -7,7 +7,7 @@ set -e
 cat <<-'EOF'
 # This file lists all individuals having contributed content to the
 # repository.
-# For how it is generated, see `generate-authors.sh`.
+# For how it is generated, see `authors.sh`.
 EOF
 echo
 
