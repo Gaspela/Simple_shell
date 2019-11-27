@@ -56,6 +56,10 @@ The available command specifiers are
 *	strtok
 *	wait
 
+## Flowchart
+
+![Logo FLOWSHELL](diagram_shell.jpg)
+
 ## Running the tests
 
 The shell should work like this in interactive mode:
