@@ -67,6 +67,8 @@ The available command specifiers are
 ### FLOWPARCH
 
 ![Logo FLOWPARCH](/flowchart/diagram_parent_child.jpg)
+<p align="center">
+  </flowchart/diagram_parent_child.jpg>
 
 ## Running the tests
 
