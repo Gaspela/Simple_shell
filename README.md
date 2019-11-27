@@ -1,16 +1,14 @@
-Simple shell
+# Simple shell
 
-Synopsis
-This is a simple implementation of the functions of the original shell
+Synopsis This is a simple implementation of the functions of the original shell
 
-Getting Started
-All the files are to be compiled on Ubuntu 14.04 LTS
-Compile your code with: gcc -Wall -Werror -Wextra -pedantic *.c hsh.
-Include the "shell.h" header file on the functions using the simple shell.
+## Getting Started
 
-Prerequisites
+All the files are to be compiled on Ubuntu 14.04 LTS Compile your code with: gcc -Wall -Werror -Wextra -pedantic *.c hsh. Include the "shell.h" header file on the functions using the simple shell.
 
-General
+### Prerequisites
+
+# General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 14.04 LTS
 Your C programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
@@ -21,7 +19,7 @@ No more than 5 functions per file
 All your header files should be include guarded
 Use system calls only when you need to
 
-Output
+# Output
 Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
 The only difference is when you print an error, the name of the program must be equivalent to your argv[0] (See below)
 Example of error with sh:
@@ -40,21 +38,22 @@ $ echo "qwerty" | ./././hsh
 $
 
 The available command specifiers are
-•	chdir 
-•	execve 
-•	exit 
-•	fork 
-•	free
-•	getcwd 
-•	getline
-•	isatty
-•	malloc
-•	perror
-•	stat
-•	strtok
-•	wait
+*	chdir 
+*	execve 
+*	exit 
+*	fork 
+*	free
+*	getcwd 
+*	getline
+*	isatty
+*	malloc
+*	perror
+*	stat
+*	strtok
+*	wait
 
-Testing
+## Running the tests
+
 The shell should work like this in interactive mode:
 
 $ ./hsh
@@ -77,8 +76,10 @@ hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
 
-Authors
+## Authors
+
 Samir Millan - Diego Quijano
 
-License
-This project is licensed under the MIT License
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
