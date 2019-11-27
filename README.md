@@ -1,5 +1,8 @@
 # Simple shell
 
+![AppVeyor tests](https://img.shields.io/appveyor/tests/NZSmartie/coap-net-iu0to.svg?passed_label=good&failed_l\
+  abel=bad&skipped_label=n%2Fa)
+
 Synopsis This is a simple implementation of the functions of the original shell
 
 ## Getting Started
