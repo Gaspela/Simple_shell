@@ -58,6 +58,8 @@ The available command specifiers are
 
 ## Flowchart
 
+### FLOWSHELL v1.0
+
 ![Logo FLOWSHELL](diagram_shell.jpg)
 
 ## Running the tests
