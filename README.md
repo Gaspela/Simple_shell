@@ -74,7 +74,7 @@ $ pwd
 
 ### FLOWSHELL
 
-![Logo FLOWSHELL](/flowchart/diagram_shell.jpg)
+![Logo FLOWSHELL](/flowchart/diagram_shell (2).jpg)
 
 ### FLOWPARCH
 
