@@ -26,7 +26,6 @@ int main(int __attribute__((unused)) argc, char *argv[])
 
     while (init_shell)
     {
-        cont++;
         if (isatty(0) == 1)
         /*Update the pwd promt*/
         _printf("/hsh$ ");
@@ -100,6 +99,7 @@ int main(int __attribute__((unused)) argc, char *argv[])
                     exit(exit_status);
                     /*Case 0, process child*/
                 case 0:
+			cont++;
                     /*Create and add the items entered by the user in the array*/
                     arguments = create_array(type_command);
                     add_array(token, arguments);
@@ -110,7 +110,8 @@ int main(int __attribute__((unused)) argc, char *argv[])
                     /*exit_status = 127 indicates a command not found error*/
                     exit_status = 127;
                     exit(exit_status);
-
+			 if (WIFEXITED(stat))
+                        exit_status = WEXITSTATUS(stat);
                 default:
                     /*Wait blocked the process child, and stat return the status process*/
                     return (0);
