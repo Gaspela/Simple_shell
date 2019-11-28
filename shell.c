@@ -110,9 +110,10 @@ int main(int __attribute__((unused)) argc, char *argv[])
                     /*exit_status = 127 indicates a command not found error*/
                     exit_status = 127;
                     exit(exit_status);
-			 if (WIFEXITED(stat))
-                        exit_status = WEXITSTATUS(stat);
                 default:
+			wait(&stat);
+                    if (WIFEXITED(stat))
+                        exit_status = WEXITSTATUS(stat);
                     /*Wait blocked the process child, and stat return the status process*/
                     return (0);
                 }
