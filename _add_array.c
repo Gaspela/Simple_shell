@@ -1,7 +1,7 @@
 #include "shell.h"
 /**
- * add_array - sets the usr's cmds into our newly made argv array
- * @token: strtok's type command.
+ * add_array - set the command type user made command_array
+ * @token: strtok's string delims.
  * @command_array: the array we are inputting the values into
  * Return: none
  */
