@@ -58,8 +58,18 @@ The available command specifiers are
 *	strtok
 *	wait
 
-## Flowchart
+## USAGE
 
+## FLOWCHART
+
+```bash
+$ ls
+_add_array.c  _create_array.c    _getenvironment.c  man_1_simple_shell  README.md  _strcmp.c
+AUTHORS       _display_number.c  _helper_printf.c   pathname.c          shell.c    _strlen.c
+```
+```
+$ pwd
+```
 ### FLOWSHELL
 
 ![Logo FLOWSHELL](/flowchart/diagram_shell.jpg)
