@@ -60,8 +60,6 @@ The available command specifiers are
 
 ## USAGE
 
-## FLOWCHART
-
 ```bash
 $ ls
 _add_array.c  _create_array.c    _getenvironment.c  man_1_simple_shell  README.md  _strcmp.c
@@ -69,7 +67,11 @@ AUTHORS       _display_number.c  _helper_printf.c   pathname.c          shell.c 
 ```
 ```
 $ pwd
+/home/vagrant/simple_shell
 ```
+
+## FLOWCHART
+
 ### FLOWSHELL
 
 ![Logo FLOWSHELL](/flowchart/diagram_shell.jpg)
